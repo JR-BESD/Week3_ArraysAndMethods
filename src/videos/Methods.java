@@ -3,8 +3,20 @@ package videos;
 public class Methods {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		// a method is a way to modularize a code and reuse it by referring to the method.
+		
+		String firstName = "Bob";
+		String lastName = "Ross";
+		String fullName = createFullName(firstName, lastName);
+		String fullName2 = createFullName("Sam", lastName);
+		
+		System.out.println(fullName);
+		System.out.println(fullName2);
+		
+	}
+	public static String createFullName(String x, String y) {
+		return x + " " + y;
+		
 	}
 
 }
